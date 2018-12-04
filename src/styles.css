@@ -1,0 +1,86 @@
+/* You can add global styles to this file, and also import other style files/ */
+@import '..\node_modules\bootstrap\dist\css\bootstrap.min.css';
+@import '..\node_modules\@fortawesome\fontawesome-free\css\all.min.css';
+
+html {
+    font-size: 12px;
+    height: 100%;
+}
+
+body {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    position: relative;
+    padding: 7.4rem 0rem 3.2rem 0rem;
+    background-color: #efefef;  
+    line-height: normal;  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none !important;
+}
+
+.container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.row {
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+[class*='col-'] {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.page {
+    height: 100%;
+    padding: 2rem 0rem 2rem 1rem;
+    overflow-y: auto;
+}
+
+ul {
+    list-style: circle;
+}
+
+ul li {
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    .page {
+        padding: 2rem 0rem 2rem 1rem;
+    }
+    body {        
+        padding: 6rem 2rem 5rem 17rem;    
+        background-color: #fff;
+        height: 100%;
+    }
+
+    .page {
+        height: 100%;
+        background-color: #efefef;  
+        overflow-y: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+}

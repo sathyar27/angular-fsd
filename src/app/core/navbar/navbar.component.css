@@ -1,0 +1,60 @@
+.tabMenu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 4rem;
+  overflow-x: auto;
+  z-index: 1;
+}
+
+nav {
+  background-color: #717171;
+  min-width: 40rem;
+}
+
+nav a {
+  display: inline-block;
+  padding: 1rem;
+  color: #fff;
+  border-bottom: 1px solid #7a7777;
+  position: relative;
+  transition: all .3s;
+  background-color: #717171;
+}
+
+nav a.active,
+nav a:hover {
+  background: #2087af;
+}
+
+@media screen and (min-width: 768px) {
+  .tabMenu {
+    left: 2rem;
+    top: 6rem;
+    bottom: 5.5rem;
+    width: 15rem;
+  }
+
+  nav {
+      min-width: 100%;
+  }
+
+  nav a {
+      display: block;
+  }
+
+  nav a:after {
+    content: '';
+    border: 1rem solid transparent;
+    border-right-color: #efefef;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+
+  nav a.active:after {
+    opacity: 1;
+  }
+}

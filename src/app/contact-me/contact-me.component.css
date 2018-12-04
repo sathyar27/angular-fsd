@@ -1,0 +1,14 @@
+.modal {
+    display: block;
+    opacity: 0;
+    visibility: hidden;    
+}
+
+.modal.in {
+    opacity: 1;
+    visibility: visible;
+}
+
+.alert {
+    margin-top: 1rem;
+}

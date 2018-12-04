@@ -1,0 +1,11 @@
+<ul class="list-unstyled">
+  <li *ngFor="let projectDetail of projectDetails">
+    <h4><strong>Title:</strong> {{projectDetail.title}}</h4>
+    <strong>Description:</strong>
+    <p>{{projectDetail.description}}</p>
+    <strong>Roles & Responsibilities:</strong>
+    <ul>
+      <li *ngFor="let role of projectDetail.roles">{{role.rolesDesc}}</li>
+    </ul>
+  </li>
+</ul>
